@@ -1,0 +1,160 @@
+/*
+Author: Logan Triplett
+File Name: styles.css
+Date: 09/09/2025
+*/
+/*
+CSS Reset
+*/
+
+ *{margin: 0;
+    padding:0 ;
+    border: 0;
+}
+
+/*
+Style rules for body and images
+*/
+h1{ 
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+body{
+    background-color: #d3af37;
+}
+img{
+    max-width: 100%;
+    display: block;
+    
+    
+    
+}
+
+/*
+Style rules for navigation area
+*/
+
+nav{
+  background-color: #c0c0c0;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+nav li{
+    display:inline-block;
+    font-size: 1.5em;
+    font-family: Geneva ,Arial ,sans-serif;
+    font-weight: bold;
+}
+nav li a{
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 2em;
+    text-decoration: remove;
+}
+
+/*
+Style rules for main content
+*/
+main{
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+}
+main p{
+    font-size: 1.25em;
+}
+main h3{
+    padding-top: 2%;
+}
+main ul{
+    list-style: square;
+}
+
+/*
+Style rules for class and id selectors
+*/
+.card{
+    color: #d3af37;
+    background-color: #c0c0c0;
+}
+.card-body{
+    color: #d3af37;
+}
+
+.link{
+    color: #c0c0c0;
+    font-weight: bold;
+    font-style: italic;
+}
+.action{
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+#contact{
+    text-align: center;
+}
+
+/*
+Style rules for footer content
+*/
+
+footer{
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #d3af37;
+    color: #c0c0c0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+footer a{
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+/*
+media query for tablet view
+*/
+@media screen and (min-width: 620px), print {
+ 
+    /* Tablet veiwport: Show tab-desk class, hide mobile class */
+    .tab-desk {display: block;}
+    .mobile {display: none;}
+    /*Tablet veiwport: style rules for nav area*/
+    nav li{ border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+    }
+    nav li a{padding: .5em;}
+}
+
+/*media query for desktop*/
+
+@media screen and (min-width:1000px),print {
+nav li{ font-size: 1.5em;}
+nav li a {padding-top: .5em; padding-bottom: .5em; padding-left: 1.5em; padding-right: 1.5em; }
+nav li a:hover {color: #c0c0c0; background-color: #d3af37;}
+/* Desktop veiwport: Style rules for main content*/
+#info ul{margin-left: 5%;}
+
+}
+   /*Media Query for large Desktop Veiwports*/
+   
+@media screen and (min-width:1921px), print{
+    body {background:linear-gradient(#1f1101 #0c9157)
+    }
+    #wrapper {width: 1920px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  #main {background-color: #d3af37;}
+
+}
